@@ -1,0 +1,49 @@
+
+:root {
+    --bright-orange-color: hsl(31, 77%, 52%);
+    --dark-cyan-color: hsl(184, 100%, 22%);
+    --very-dark-cyan-color: hsl(179, 100%, 13%);
+    --transparent-white-color: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray-color: hsl(0, 0%, 95%);
+
+    --heading-size: 2.5rem;
+    --heading-line: 1.2;
+
+    --paragraph-size: 0.9375rem;
+    --paragraph-line: 1.67;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: var(--paragraph-size);
+    line-height: var(--paragraph-line);
+    background-color: var(--very-light-gray-color);
+    margin: 0;
+    padding: 0;
+    
+}
+
+h1, h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    line-height: var(--heading-line); 
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+a, p {
+    font-family: inherit;
+    line-height: inherit;
+    font-weight: 400;
+}
+

@@ -1,0 +1,20 @@
+{
+    "name": "three-column-preview-card-component",
+    "version": "1.0.0",
+    "description": "This is a solution of one the Frontend Mentor challenges - https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-, built with Vanilla CSS",
+    "source": "index.html",
+    "scripts": {
+      "start": "parcel",
+      "build": "parcel build"
+    },
+    "keywords": [
+      "Parcel",
+      "HTML",
+      "CSS"
+    ],
+    "author": "Radek Tomasek (radek.tomasek@gmail.com)",
+    "license": "ISC",
+    "devDependencies": {
+      "parcel": "^2.9.2"
+    }
+  }

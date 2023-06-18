@@ -5,6 +5,10 @@
     --very-dark-cyan-color: hsl(179, 100%, 13%);
     --transparent-white-color: hsla(0, 0%, 100%, 0.75);
     --very-light-gray-color: hsl(0, 0%, 95%);
+    --white-color: hsl(0, 0%, 100%);
+
+    --grid-container-width: 20.4375rem;
+    --grid-container-height: 82.875rem;
 
     --heading-size: 2.5rem;
     --heading-line: 1.2;
@@ -35,7 +39,9 @@ body {
 
 h1, h2 {
     font-family: 'Big Shoulders Display', cursive;
-    line-height: var(--heading-line); 
+    font-size: var(--heading-size);
+    line-height: var(--heading-line);
+    color: var(--very-light-gray-color);
     font-weight: 700;
     margin: 0;
     padding: 0;
@@ -45,5 +51,131 @@ a, p {
     font-family: inherit;
     line-height: inherit;
     font-weight: 400;
+    margin: 0;
+    padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
+p {
+    color: var(--transparent-white-color);
+}
+
+.btn {
+    display: inline-flex;
+    background: var(--very-light-gray-color);
+    width: 9.125rem;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.5625rem;
+}
+
+.btn:hover {
+    color: var(--white-color);
+    background: transparent;
+    border: 2px solid var(--white-color);
+}
+
+.btn--orange {
+    color: var(--bright-orange-color);
+}
+
+.btn-darkcyan {
+    color: var(--dark-cyan-color);
+}
+
+.btn-darkercyan {
+    color: var(--very-dark-cyan-color);
+}
+
+.grid {
+    display: grid;
+    width: var(--grid-container-width);
+    height: var(--grid-container-height);
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+.card:first-child {
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.card:last-child {
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.card__heading {
+    text-transform: uppercase;
+}
+
+.card__icon {
+    flex-basis: 4.6875rem;
+}
+
+.card__heading {
+    flex-basis: 4.5625rem;
+}
+
+.card__description {
+    flex-basis: 9.375rem;
+}
+
+.card--orange {
+    background-color: var(--bright-orange-color);
+}
+
+.card--darkcyan {
+    background-color: var(--dark-cyan-color);
+}
+
+.card--darkercyan {
+    background-color: var(--very-dark-cyan-color);
+}
+
+.centered {
+    margin: 0 auto;
+}
+
+
+/* Desktop breakpoint */
+@media screen and (min-width: 90em) {
+    :root {
+        --grid-container-width: 57.5rem;
+        --grid-container-height: 31.25rem;
+    }
+
+    .grid {
+        width: var(--grid-container-width);
+        height: var(--grid-container-height);
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    .card:first-child {
+        border-radius: 0.5rem 0 0 0.5rem;
+    }
+    
+    .card:last-child {
+        border-radius: 0 0.5rem 0.5rem 0;
+    }
+    
+    .card__description {
+        flex-basis: 13rem;
+    }
+
+    .centered {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

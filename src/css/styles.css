@@ -145,6 +145,25 @@ p {
     margin: 0 auto;
 }
 
+/* attrbutions */
+header {
+    text-align: center;
+}
+
+.attribution {
+    color: var(--dark-cyan-color);
+    margin: 1rem 0;
+}
+
+.attribution a {
+    color: var(--bright-orange-color);
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    text-decoration: underline;
+}
+
 
 /* Desktop breakpoint */
 @media screen and (min-width: 90em) {
@@ -177,5 +196,9 @@ p {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+
+    .attribution {
+        margin: 0;
     }
 }

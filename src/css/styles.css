@@ -150,6 +150,10 @@ header {
     text-align: center;
 }
 
+header h1 {
+    color: var(--dark-cyan-color);
+}
+
 .attribution {
     color: var(--dark-cyan-color);
     margin: 1rem 0;
